@@ -1,0 +1,18 @@
+[project]
+name = "smetna-software"
+version = "0.1.0"
+description = "Smetna Amateur Solutions (tm)"
+authors = [
+    {name = "kamilmajchrzak",email = "k.majchrzak1994@gmail.com"}
+]
+license = {text = "BSD"}
+readme = "README.md"
+requires-python = ">=3.10, 3.14"
+dependencies = [
+    "pyside6 (>=6.9.2,<7.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
