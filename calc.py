@@ -9,7 +9,7 @@ class MyWindow(QWidget):
 
         self.setWindowTitle("Przycisk demo")
         self.setGeometry(300, 300, 300, 200)
-
+        self.howmanyclicks = 0
         # Layout pionowy
         layout = QVBoxLayout()
 
@@ -27,8 +27,13 @@ class MyWindow(QWidget):
 
         self.setLayout(layout)
 
+    
+
     def on_button_click(self):
         self.label.setText("Przycisk został kliknięty 🎉")
+        self.howmanyclicks += 1
+        if (self.howmanyclicks >= 10): 
+            self.label.setText("Dobra słyszałem za pierwszym razem ☠️")
 
 
 if __name__ == "__main__":
